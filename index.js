@@ -5,6 +5,10 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+console.log('Frontend URL:', process.env.FRONTEND_URL);
+console.log('Deployed Frontend URL:', process.env.DEPLOYED_FRONTEND_URL);
+console.log('Mongo URI:', process.env.MONGO_URI);
+
 
 app.use(cors());
 app.use(express.json());

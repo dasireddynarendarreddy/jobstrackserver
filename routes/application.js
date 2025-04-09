@@ -5,7 +5,7 @@ const Application = require('../models/Application');
 
 // Add
 router.post('/', async (req, res) => {
-    console.log("hello")
+    
   const newApp = new Application(req.body);
   const saved = await newApp.save();
   res.status(201).json(saved);
@@ -14,6 +14,7 @@ router.post('/', async (req, res) => {
 // Get All
 router.get('/', async (req, res) => {
   const apps = await Application.find();
+  console.log("get")
   res.json(apps);
 });
 
