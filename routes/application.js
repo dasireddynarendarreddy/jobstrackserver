@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
 // Get All
 router.get('/', async (req, res) => {
   const apps = await Application.find();
-  console.log("get")
+  
   res.json(apps);
 });
 
