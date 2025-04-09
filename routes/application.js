@@ -28,7 +28,7 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     console.log("delete")
   await Application.findByIdAndDelete(req.params.id);
-  res.json({ message: 'Deleted' });
+  res.json({ message: 'Deleted'});
 });
 
 module.exports = router;
