@@ -1,5 +1,5 @@
 
-# Ignore node_modules (no dot prefix)
+
 node_modules/
 
 # Ignore environment variables

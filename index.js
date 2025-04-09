@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use(
     cors({
-      origin: [process.env.FRONTEND_URL, process.env.DEPLOYED_FRONTEND_URL],
+      origin: [process.env.NODE_ENV=='development'?process.env.FRONTEND_URL:process.env.DEPLOYED_FRONTEND_URL],
       credentials: true,
     })
   );
